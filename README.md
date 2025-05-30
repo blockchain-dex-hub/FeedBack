@@ -74,8 +74,6 @@ Ví dụ với phí 0.3%, thì fee = 0.003.
 
 ---
 
-Nếu bạn đang dùng mô hình khác như **Uniswap v3** (concentrated liquidity) hoặc **Curve** (stable swap), thì công thức sẽ phức tạp hơn. Nếu bạn cần công thức cho mô hình đó, hãy nói rõ để mình giải thích thêm.
-
 
 
 
