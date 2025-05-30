@@ -11,6 +11,7 @@
 ![image](https://github.com/user-attachments/assets/1128a2b6-4028-4726-ab41-6139b51a2c26)
 ![image](https://github.com/user-attachments/assets/473229d6-a4ba-40b5-a39b-e43fd617e482)
 
+
 - Phần thanh khoản (Có thể add và remove thanh khoản).
 - Công thức tính giá AMM cho giá coin.
 Công thức tính giá trong mô hình AMM (Automated Market Maker) đơn giản nhất – chẳng hạn như được sử dụng trong Uniswap v2 – dựa trên công thức:
