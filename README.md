@@ -1,4 +1,4 @@
-# Swap page
+# Swap page.
 - ![image](https://github.com/user-attachments/assets/daaa4684-dcc9-4320-868e-3543365121ae)
 - Setting nên hoạt động nhé, cái nào không dùng có thể comment lại nhé. Cái nào có trên UI thì nên hoạt động theo cấu hình khi swap nhé. Có thể đơn giản chỗ nào để lại cái nào quan trong thôi.
 - Lần đầu load trang swap chỗ này hiển thị balance luôn. Như hình này là chọn nó mới lên nhé.
