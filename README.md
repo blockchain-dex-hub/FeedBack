@@ -75,6 +75,77 @@ Ví dụ với phí 0.3%, thì fee = 0.003.
 
 ---
 
+- Công thức giá AMM Pancakeswap.
+PancakeSwap (phiên bản V2) sử dụng mô hình **AMM với công thức giống Uniswap V2**, đó là:
+
+$$
+x \cdot y = k
+$$
+
+### Trong đó:
+
+* $x$: số lượng token A trong pool
+* $y$: số lượng token B trong pool
+* $k$: hằng số sản phẩm không đổi (constant product)
+
+### ✅ **Công thức tính giá token trên PancakeSwap:**
+
+Giá của **Token A so với Token B**:
+
+$$
+\text{Giá Token A} = \frac{y}{x}
+$$
+
+Giá của **Token B so với Token A**:
+
+$$
+\text{Giá Token B} = \frac{x}{y}
+$$
+
+---
+
+### ✅ **Công thức tính lượng token nhận được khi swap (có tính phí)**
+
+PancakeSwap V2 áp dụng **phí giao dịch 0.25%**, tức là bạn chỉ swap với 99.75% số token đưa vào.
+
+Công thức lượng token bạn nhận được khi swap:
+
+$$
+\Delta y = \frac{y \cdot \Delta x \cdot (1 - f)}{x + \Delta x \cdot (1 - f)}
+$$
+
+Trong đó:
+
+* $\Delta x$: số token bạn đưa vào (token A)
+* $\Delta y$: số token bạn nhận được (token B)
+* $f = 0.0025$: phí giao dịch 0.25%
+* $x, y$: số lượng token trong pool trước giao dịch
+
+---
+
+### 🔁 Ví dụ:
+
+Pool có:
+
+* $x = 1000$ BNB
+* $y = 500,000$ BUSD
+
+Bạn swap $\Delta x = 10$ BNB vào pool.
+
+Áp dụng công thức:
+
+$$
+\Delta y = \frac{500,000 \cdot 10 \cdot 0.9975}{1000 + 10 \cdot 0.9975}
+= \frac{4987500}{1009.975}
+≈ 4939.1\ \text{BUSD}
+$$
+
+Bạn nhận được khoảng **4939.1 BUSD** sau khi swap 10 BNB.
+
+---
+
+
+
 
 
 
